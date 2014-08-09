@@ -1,0 +1,6 @@
+.gitignore
+.project
+.classpath
+.settings
+bin/
+gen/
