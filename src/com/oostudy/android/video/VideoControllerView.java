@@ -1,14 +1,19 @@
 package com.oostudy.android.video;
 
-import com.oostudy.android.R;
-
 import android.content.Context;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class VideoControllerView extends View {
+import com.baidu.cyberplayer.core.BVideoView;
+import com.oostudy.android.R;
+
+public class VideoControllerView extends RelativeLayout {
+
 
     private TextView mCurTimeText;
     private SeekBar mSeekBar;
@@ -18,8 +23,11 @@ public class VideoControllerView extends View {
     private ImageButton mPlayBtn;
     private ImageButton mNextBtn;
 
-    public VideoControllerView(Context context) {
-        super(context);
+    private BVideoView mVideoView;
+
+    public VideoControllerView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        LayoutInflater.from(context).inflate(R.layout.view_video_controller, this);
     }
 
     @Override
@@ -33,8 +41,30 @@ public class VideoControllerView extends View {
         mNextBtn = (ImageButton) findViewById(R.id.next_btn);
     }
 
-    public void hide() {
+    public void bindVideoView(BVideoView videoView) {
+        mVideoView = videoView;
+        registerListeners();
+    }
+
+    private void registerListeners() {
+        mPlayBtn.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                if (mVideoView.isPlaying()) {
+                    mPlayBtn.setImageResource(R.drawable.play_btn);
+                    mVideoView.pause();
+                } else {
+                    mPlayBtn.setImageResource(R.drawable.stop_btn);
+                    mVideoView.resume();
+                }
+            }
+        });
         
+    }
+
+    public void setShown(boolean shown) {
+        setVisibility(shown ? View.VISIBLE : View.INVISIBLE);
     }
 
 }

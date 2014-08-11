@@ -2,9 +2,14 @@
     android:id="@+id/activity_video"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
- 
-    <com.oostudy.android.video.baidu.BaiduVideoPlayer
-        android:id="@+id/video_player"
+
+    <RelativeLayout
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.oostudy.android.video.VideoControllerView
+        android:id="@+id/video_controller_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
     />
