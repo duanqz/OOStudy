@@ -1,4 +1,4 @@
-package com.oostudy.android.video.baidu;
+package com.oostudy.android.videoplayer.baidu;
 
 
 import android.content.Context;
@@ -11,8 +11,8 @@ import android.widget.RelativeLayout;
 
 import com.baidu.cyberplayer.core.BVideoView;
 import com.oostudy.android.R;
-import com.oostudy.android.video.VideoControllerView;
-import com.oostudy.android.video.VideoPlayer;
+import com.oostudy.android.videoplayer.VideoControllerView;
+import com.oostudy.android.videoplayer.VideoPlayer;
 
 public class BaiduVideoPlayer extends RelativeLayout implements VideoPlayer {
 

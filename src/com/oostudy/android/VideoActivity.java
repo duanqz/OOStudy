@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.oostudy.android.video.baidu.BaiduVideoPlayer;
+import com.oostudy.android.videoplayer.baidu.BaiduVideoPlayer;
 
 
 public class VideoActivity extends Activity {

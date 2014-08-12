@@ -1,4 +1,4 @@
-package com.oostudy.android.video;
+package com.oostudy.android.videoplayer;
 
 public class DefaultVideoPlayer implements VideoPlayer {
 

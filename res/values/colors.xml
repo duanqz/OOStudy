@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="black">#ff000000</color>
+
+    <color name="dark_text_colour">#ff000000</color>
+    <color name="actionbar_vertical_line">#ff666666</color>
+    <color name="drawer_list_divider">#ffd3d3d3</color>
 </resources>

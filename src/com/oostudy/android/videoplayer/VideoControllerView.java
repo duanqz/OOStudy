@@ -1,4 +1,4 @@
-package com.oostudy.android.video;
+package com.oostudy.android.videoplayer;
 
 import android.content.Context;
 import android.util.AttributeSet;
