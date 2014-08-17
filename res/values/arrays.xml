@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_menu_item_names">
+        <item>Favorites</item>
+        <item>Downloads</item>
+        <item>Browse</item>
+    </string-array>
+
+    <string-array name="drawer_menu_item_summarys">
+        <item>Favorites</item>
+        <item>Downloads</item>
+        <item>Browse</item>
+    </string-array>
+</resources>

@@ -14,7 +14,7 @@
     <!-- The navigation drawer -->
 
     <fragment
-        android:name="com.oostudy.android.drawermenu.NavigationDrawerFragment"
+        android:name="com.oostudy.android.drawermenu.DrawerMenuFragment"
         android:id="@+id/navigation_drawer"
         android:layout_width="@dimen/drawer_width"
         android:layout_height="match_parent"
